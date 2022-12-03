@@ -56,7 +56,7 @@ class CitiesHistoryAdapter(
     private fun getDateTime(s: Long): String? {
         return try {
             val sdf = SimpleDateFormat("MM/dd/yyyy" , Locale("en"))
-            val netDate = Date(s * 1000)g
+            val netDate = Date(s * 1000)
             sdf.format(netDate)
         } catch (e: Exception) {
             e.toString()
