@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/locationImg"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@mipmap/location_city_24px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cityTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="start|center"
+        android:hint="@string/app_name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:fontFamily="@font/lato_heavy"
+        app:layout_constraintBottom_toBottomOf="@id/locationImg"
+        app:layout_constraintEnd_toStartOf="@id/removeImg"
+        app:layout_constraintStart_toEndOf="@id/locationImg"
+        app:layout_constraintTop_toTopOf="@id/locationImg" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/infoImg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/removeImg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/infoImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

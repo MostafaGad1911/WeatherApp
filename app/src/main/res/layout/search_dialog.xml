@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="15dp"
+        app:layout_constraintTop_toBottomOf="@id/guideLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/searchCitiesEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_for_cities"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato_heavy"
+            android:drawableStart="@mipmap/search_24px"
+            android:drawablePadding="20dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="15dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

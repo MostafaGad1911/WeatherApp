@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="cities">Cities</string>
+    <string name="add_city">Add city</string>
+    <string name="write_valid">Write a valid city</string>
+    <string name="city_exits">City already exits</string>
+
+    // Errors
+    <string name="timeout">Timeout - Please check your internet connection</string>
+    <string name="internet_connection">Unable to make a connection. Please check your internet</string>
+    <string name="connection_shutdown">Connection shutdown. Please check your internet</string>
+    <string name="server_unreach">Server is unreachable, please try again later.</string>
+    <string name="server_error">Server error… please try again</string>
+    <string name="wind_speed">Windspeed</string>
+    <string name="humidity">Humidity</string>
+    <string name="temperature">Temperature</string>
+    <string name="description">Description</string>
+
+    <!--    https://support.microsoft.com/en-us/office/insert-degree-symbol-f1d062b6-577f-4fe2-8a51-c6f7a862a8b7#:~:text=Insert%20the%20degree%20symbol%20by%20using%20a%20keyboard%20shortcut,-Place%20the%20cursor&text=On%20your%20keyboard%2C%20press%20Alt%20%2B%200176.-->
+    <string name="temp">%1$s° C </string>
+    <string name="percentage">%1$d \%% </string>
+    <string name="speed">%1$s  km/h </string>
+    <string name="search_for_cities">Search for cities</string>
+    <string name="city_historical">%1$s historical</string>
+</resources>
